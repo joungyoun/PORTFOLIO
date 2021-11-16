@@ -12,6 +12,10 @@
         src="https://kit.fontawesome.com/ec4a77f32e.js"
         crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" 
+    href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" 
+    crossorigin="anonymous">
     <link
     rel="preconnect" 
     href="https://fonts.googleapis.com">
@@ -23,16 +27,16 @@
     rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
+    <script src="main.js" dsefer></script>
 </head>
 <body>
     <!-- Navbar -->
     <nav id="navbar">
-        <logo class="navbar__logo">
+        <div class="navbar__logo">
             <i class="fas fa-moon"></i>
             <a href="#">yooni</a>
-        </logo>
-        <logo class="navbar__menu">
+        </div>
+        <div class="navbar__menu">
             <ul class="navbar__menu">
                 <li class="navbar__menu_item">Home</li>
                 <li class="navbar__menu_item">About</li>
@@ -41,7 +45,7 @@
                 <li class="navbar__menu_item">Testimonial</li>
                 <li class="navbar__menu_item">Contact</li>
             </ul>
-        </logo>
+        </div>
     </nav>
     <!-- Home -->
     <section id="Home">
@@ -55,7 +59,52 @@
         <button class="home__contact">CONTACT ME</button>
     </section>
     <!-- About -->
-    <section id="about"></section>
+    <section id="about">
+        <h1>About me</h1>
+        <p>
+            A famous design front-end developer in Korea  
+        </p>
+        <div class="about__majors">
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <div class="major__title">HTML</div>
+            </div>
+        </div>
+        <div class="about__majors">
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fab fa-css3"></i>
+                </div>
+                <div class="major__title">CSS</div>
+            </div>
+        </div>
+        <div class="about__majors">
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fab fa-js"></i>
+                </div>
+                <div class="major__title">Java Script</div>
+            </div>
+        </div>
+        <div class="about__jobs">
+            <img src="imgs/img_logo_naver.png" 
+            alt="naver" 
+            class="job__logo"
+            />
+            <p class="job_name">working at NAVER as developer</p>
+            <p class="job__period">2025 sept~</p>
+        </div>
+        <div class="about__jobs">
+            <img src="imgs/googlelogo_color_.png" 
+            alt="google" 
+            class="job__logo"
+            />
+            <p class="job_name">working at google as developer</p>
+            <p class="job__period">2030 july~</p>
+        </div>
+    </section>
     <!-- Testimonoals -->
     <section id="Testimonials"></section>
     <!-- Skills -->
