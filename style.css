@@ -150,3 +150,24 @@ p {
     border: 2px solid var(--color-white);
     border-radius: var(--size-border-radius);
 }
+
+/* Section common */
+.section {
+    padding: 50px;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* About */
+.about__majors {
+    display: flex;
+    justify-content: space-between;
+}
+
+.major__icon {
+    width: 170px;
+    height: 170px;
+    font-size: 70px;
+    background-color: yellow;
+}
