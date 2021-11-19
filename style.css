@@ -91,11 +91,13 @@ p {
 
 /* Navbar */
 #navbar {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   background-color: var(--color-dark-blue);
   align-items: center;
-  color: var(--color-white);
+  background-color: transparent;
   padding: 16px;
 }
 
@@ -135,6 +137,7 @@ p {
 #Home {
   background: url("imgs/은하수.png") center/cover no-repeat;
   padding: 40px;
+  padding: 100px;
   text-align: center;
 }
 
