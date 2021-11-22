@@ -97,17 +97,27 @@ p {
   justify-content: space-between;
   background-color: var(--color-dark-blue);
   align-items: center;
+  color: transparent;
   background-color: transparent;
   padding: 16px;
+  transition: all var(--animation-duration) ease-in-out;
+}
+
+
+#navbar.navbar--dark {
+  background-color: dark var(--color-dark-blue);
+  padding: 8px;
 }
 
 .navbar__menu {
   display: flex;
+  color: var(--color-white);
 }
 
 .navbar__logo {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
+  color: white;
 }
 
 .navbar__menu__item {
@@ -123,21 +133,23 @@ p {
 
 .navbar__menu__item:hover {
   background-color: var(--color-light-blue);
+  border-radius: var(--size-border-radius);
 }
+
 
 .navbar__toggle-btn {
   position: absolute;
-  top: 14px;
+  top: 24px;
   right: 32px;
   font-size: 24px;
-  color: blue;
+  color: var(--color-white);
   display: none;
 }
 /* Home */
 #Home {
   background: url("imgs/은하수.png") center/cover no-repeat;
   padding: 40px;
-  padding: 100px;
+  padding-top: 120px;
   text-align: center;
 }
 
@@ -149,7 +161,7 @@ p {
 }
 
 .home__title,
-.home__decription {
+.home__description {
   color: var(--color-white);
 }
 
@@ -188,16 +200,16 @@ p {
   line-height: 170px;
   font-size: 70px;
   margin: auto;
-  color: var(--color-blue);
+  color: var(--color-light-blue);
   border: 1px solid blue;
   border-radius: 50%;
   margin-bottom: 16px;
 }
 .major__icon i {
-  transition: all var(--animaton-duration);
+  transition: all var(--animaton-duration) ease;
 }
-.major__icon :hover i {
-  color: var(--color-light-blue);
+.major__icon:hover i {
+  color: rgb(241, 241, 56);
   transform: rotate(-30deg) scale(1.1);
 }
 .major__title,
@@ -398,7 +410,7 @@ p {
   margin: 32px 0;
 }
 
-.testimnial__avatar {
+.testimonial__avatar {
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -428,7 +440,7 @@ p {
 
 /* Contact */
 #contact {
-  background-color: var(--color-blue);
+  background-color: var(--color-dark-blue);
 }
 
 .contact__title,
@@ -444,7 +456,10 @@ p {
 .contact__links {
   font-size: var(--font-large);
   margin: 24px 0;
-  transition: all var(--animation-duration) ease-in;
+}
+
+.contact__links i {
+  transition: all var(--animation-duration ease-in);
 }
 
 
