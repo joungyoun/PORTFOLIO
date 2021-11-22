@@ -103,9 +103,8 @@ p {
   transition: all var(--animation-duration) ease-in-out;
 }
 
-
 #navbar.navbar--dark {
-  background-color: dark var(--color-dark-blue);
+  background-color: var(--color-dark-blue);
   padding: 8px;
 }
 
@@ -135,7 +134,6 @@ p {
   background-color: var(--color-light-blue);
   border-radius: var(--size-border-radius);
 }
-
 
 .navbar__toggle-btn {
   position: absolute;
@@ -461,7 +459,6 @@ p {
 .contact__links i {
   transition: all var(--animation-duration ease-in);
 }
-
 
 .contact__links i:hover {
   transform: scale(1.1);

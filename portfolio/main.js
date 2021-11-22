@@ -6,7 +6,11 @@ const navbarHeight = navbar.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
     console.log(window.scrollY);
     console.log('navbarHeight: ${nabarHeight}');
-    
+    if(window.scrollY > navbarHeight) {
+        navbar.classList.add('navbar--dark');
+    } else {
+        navbar.classList.remove('navbar--dark')
+    }
 });
 
 
