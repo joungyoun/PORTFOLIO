@@ -9,4 +9,4 @@ document.addEventListener('scroll', () => {
     
 });
 
-//Handle scrolling when tapping on the navbar navbar__menu
+
