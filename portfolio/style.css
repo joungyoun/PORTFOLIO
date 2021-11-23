@@ -505,3 +505,9 @@ p {
     height: 80px;
   }
 }
+
+* {
+
+  scroll-behavior: smooth;
+  
+  }
