@@ -28,10 +28,9 @@
 
   /* Size */
   --size-border-radius: 4px;
-
-  /*Annimation*/
-  --animation-duration: 300ms;
 }
+/*Annimation*/
+--animation-duration: 300ms;
 
 /* Universal tags */
 * {
@@ -301,6 +300,7 @@ p {
 }
 
 /* Work */
+
 .work__categories {
   margin: 40px;
 }
@@ -313,7 +313,7 @@ p {
 
 .category__btn.active,
 .category__btn:hover {
-  background-color: var(--color-dark-blue);
+  background-color: var(--color-light-blue);
   color: var(--color-white);
 }
 
@@ -342,8 +342,14 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  opacity: 1;
+  transition: all var(--animation-duration) ease-in;
 }
 
+.work__projects.anim-out {
+  opacity: 0;
+  transform: scale(0.96) translateY(40px);
+}
 .project {
   position: relative;
   display: flex;
@@ -355,9 +361,14 @@ p {
   background-color: var(--color-light-white);
 }
 
+.project.invisible {
+  display: none;
+}
+
 .project__img {
   max-width: 100%;
   max-height: 100%;
+  align-self: center;
 }
 
 .project__description {
@@ -374,24 +385,23 @@ p {
   transform: translateY(10px);
   transition: all var(--animation-duration) ease-in;
 }
-
 .project:hover .project__description {
   opacity: 0.8;
   transform: translateY(0px);
 }
 
 .project__description h3 {
-  color: var(--color-white);
+  color: var(--color-orange);
 }
 
 .project__description h3:after {
-  content: "";
+  content: " ";
   display: block;
   position: relative;
   left: 50%;
-  width: 25px;
+  width: 50px;
   height: 2px;
-  margin-left: -12px;
+  transform: translateX(-50%);
   margin-top: 8px;
   background-color: var(--color-dark-white);
 }
@@ -492,12 +502,12 @@ p {
 @media screen and (max-width: 768px) {
   :root {
     /* Font size */
-    --font-large: 30px;
-    --font-medium: 18px;
-    --font-regular: 16px;
-    --font-small: 14px;
-    --font-micro: 12px;
-  }
+--font-large: 30px;
+--font-medium: 18px;
+--font-regular: 16px;
+--font-small: 14px;
+--font-micro: 12px;
+}
 
   .navbar__toggle-btn {
     display: block;
@@ -545,13 +555,19 @@ p {
     flex-direction: column;
   }
 
+  .category__btn {
+    margin: 4px 0;
+    width: 100%;
+  }  
+  
   .project {
     flex-grow: 1;
   }
 
   .testimonial {
     flex-direction: column;
-    align-items: center;
+    align-items:  center;
+
   }
   .testimonial__avatar {
     width: 120px;
@@ -575,6 +591,8 @@ p {
     line-height: 50px;
     right: 16px;
     bottom: 16px;
+
+
   }
 }
 
