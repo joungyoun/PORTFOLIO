@@ -108,7 +108,7 @@ p {
 
 #navbar.navbar--dark {
   background-color: var(--color-dark-blue);
-  padding: 8px;
+  padding: 2px;
 }
 
 .navbar__menu {
@@ -227,6 +227,9 @@ p {
   align-items: center;
 }
 
+.job__logo {
+  width: 80px;
+}
 .job__description {
   margin: 0 16px;
   text-align: left;
@@ -524,7 +527,7 @@ p {
   }
 
   #navbar.navbar--dark {
-    padding: 16px;
+    padding: 14px;
   }
 
   .navbar__menu {
@@ -540,7 +543,7 @@ p {
 
   .section {
     padding: 16px;
-    padding-top: 40px;
+    padding-top: 36px;
   }
 
   .about__majors {
